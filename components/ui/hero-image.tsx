@@ -40,7 +40,7 @@ export function HeroImage({ src, alt, badge }: HeroImageProps) {
               src={src}
               alt={alt}
               fill
-              className="object-cover object-top scale-105"
+              className="object-cover object-top"
               priority
               sizes="(max-width: 640px) 288px, 320px"
             />

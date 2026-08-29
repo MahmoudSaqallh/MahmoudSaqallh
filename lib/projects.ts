@@ -91,4 +91,19 @@ export const projects: Project[] = [
     url: "https://scintillating-bombolone-86d1be.netlify.app/",
     category: "react",
   },
+  {
+    id: "dqq",
+    title: {
+      ar: "Dqq",
+      en: "Dqq",
+    },
+    description: {
+      ar: "نظام ذكي لإدارة المستودعات والمتاجر الإلكترونية، يسهّل تجهيز الطلبات ويقلل الأخطاء ويرفع كفاءة عمليات الشحن والتخزين",
+      en: "An intelligent warehouse and e-commerce management system that streamlines order fulfillment, reduces errors, and improves shipping and inventory efficiency",
+    },
+    image: "/projects/dqq.png",
+    technologies: ["Next.js", "React", "Tailwind CSS"],
+    url: "https://dqq-rco3.vercel.app/",
+    category: "react",
+  },
 ];

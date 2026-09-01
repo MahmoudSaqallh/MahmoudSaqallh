@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail, Phone } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
 import { HeroImage } from "@/components/ui/hero-image";
+import { AnimatedTitle } from "@/components/ui/animated-title";
 import { useLocale } from "@/components/providers/locale-provider";
 import { fadeInUp, scaleIn, staggerContainer } from "@/lib/animations";
 import { heroContent, personalInfo, t } from "@/lib/content";
@@ -59,7 +60,7 @@ export function Hero() {
           <motion.h1
             variants={fadeInUp}
             custom={0.1}
-            className="mb-4 bg-gradient-to-r from-foreground via-foreground to-accent bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl lg:text-6xl"
+            className="mb-4 text-white bg-clip-text text-3xl font-bold tracking-tighter  sm:text-4xl lg:text-5xl"
           >
             {t(personalInfo.name, locale)}
           </motion.h1>
@@ -69,7 +70,7 @@ export function Hero() {
             custom={0.2}
             className="mb-6 text-2xl font-semibold text-muted sm:text-3xl"
           >
-            {t(personalInfo.title, locale)}
+            <AnimatedTitle phrases={heroContent.roles} />
           </motion.h2>
 
           <motion.p

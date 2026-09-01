@@ -3,6 +3,7 @@ import { Cairo, Inter } from "next/font/google";
 import { LocaleProvider } from "@/components/providers/locale-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { SplashLoader } from "@/components/ui/splash-loader";
+import { BackToTop } from "@/components/ui/back-to-top";
 import "./globals.css";
 
 const inter = Inter({
@@ -58,6 +59,7 @@ export default function RootLayout({
           <LocaleProvider>
             <SplashLoader />
             {children}
+            <BackToTop />
           </LocaleProvider>
         </ThemeProvider>
       </body>

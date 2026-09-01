@@ -3,15 +3,15 @@ import type { LocalizedString, NavItem, Skill } from "./types";
 export const personalInfo = {
   name: {
     ar: "محمود ساق الله",
-    en: "Mahmoud Saq Allah",
+    en: "Mahmoud Saqallah",
   },
   title: {
     ar: "مطور MERN Stack",
     en: "MERN Stack Developer",
   },
-  phone: "0599663952",
-  whatsapp: "https://wa.me/970599663952",
-  email: "mahmoudsaqallah@gmail.com",
+  phone: "+972599663952",
+  whatsapp: "https://wa.me/972599663952",
+  email: "adamsakallh@gmail.com",
   github: "https://github.com/MahmoudSaqallh",
   linkedin: "https://linkedin.com/in/mahmoudsaqallah",
 };
@@ -49,6 +49,11 @@ export const heroContent = {
     ar: "مرحباً، أنا",
     en: "Hi, I'm",
   },
+  roles: [
+    { ar: "مطور MERN Stack", en: "MERN Stack Developer" },
+    { ar: "مصمم جرافيك", en: "Graphic Designer" },
+    { ar: "ممنتج فديوهات ", en: "Video Editing" },
+  ] as LocalizedString[],
   subtitle: {
     ar: "أبني تطبيقات ويب حديثة وسريعة باستخدام MERN Stack",
     en: "I build modern, fast web applications using the MERN Stack",

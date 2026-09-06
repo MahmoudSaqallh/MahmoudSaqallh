@@ -106,4 +106,19 @@ export const projects: Project[] = [
     url: "https://dqq-rco3.vercel.app/",
     category: "react",
   },
+  {
+    id: "travelor",
+    title: {
+      ar: "Travelor",
+      en: "Travelor",
+    },
+    description: {
+      ar: "موقع سياحة وسفر يعرض الوجهات والرحلات السياحية مع تصميم عصري وواجهة سهلة الاستخدام",
+      en: "A tour and travel website showcasing destinations and trips with a modern design and easy-to-use interface",
+    },
+    image: "/projects/travelor.png",
+    technologies: ["React", "Next.js", "Tailwind CSS"],
+    url: "https://travelor-pjsm.vercel.app/",
+    category: "react",
+  },
 ];

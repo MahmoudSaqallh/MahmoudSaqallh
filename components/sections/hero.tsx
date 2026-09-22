@@ -8,6 +8,7 @@ import { AnimatedTitle } from "@/components/ui/animated-title";
 import { useLocale } from "@/components/providers/locale-provider";
 import { fadeInUp, scaleIn, staggerContainer } from "@/lib/animations";
 import { heroContent, personalInfo, t } from "@/lib/content";
+import { resumePdfPath } from "@/lib/resume";
 
 export function Hero() {
   const { locale } = useLocale();
@@ -60,7 +61,7 @@ export function Hero() {
           <motion.h1
             variants={fadeInUp}
             custom={0.1}
-            className="mb-4 text-white bg-clip-text text-3xl font-bold tracking-tighter  sm:text-4xl lg:text-5xl"
+            className="mb-4 bg-gradient-to-r from-[var(--hero-name-from)] via-[var(--hero-name-from)] to-accent bg-clip-text text-3xl font-bold tracking-tighter text-transparent sm:text-4xl lg:text-5xl"
           >
             {t(personalInfo.name, locale)}
           </motion.h1>
@@ -94,14 +95,15 @@ export function Hero() {
             >
               {t(heroContent.ctaProjects, locale)}
             </motion.button>
-            <motion.button
+            <motion.a
+              href={resumePdfPath}
+              download="mahmoud saqallh cv.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => scrollTo("contact")}
               className="rounded-full border border-border bg-surface px-8 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent"
             >
-              {t(heroContent.ctaContact, locale)}
-            </motion.button>
+              {t(heroContent.ctaCV, locale)}
+            </motion.a>
           </motion.div>
 
           <motion.div

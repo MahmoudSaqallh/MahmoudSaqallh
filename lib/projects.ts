@@ -17,6 +17,21 @@ export const projects: Project[] = [
     category: "html",
   },
   {
+    id: "games",
+    title: {
+      ar: "Mahmoud",
+      en: "Mahmoud",
+    },
+    description: {
+      ar: "موقع شخصي بأسلوب ووردبريس يشارك الكتب والألعاب والقصص والأحداث الشخصية",
+      en: "A WordPress-style personal website sharing books, games, stories, and personal events",
+    },
+    image: "/projects/games.png",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    url: "https://gamess-chi.vercel.app/",
+    category: "html",
+  },
+  {
     id: "for-education",
     title: {
       ar: "FOR EDUCATION",
@@ -119,6 +134,27 @@ export const projects: Project[] = [
     image: "/projects/travelor.png",
     technologies: ["React", "Next.js", "Tailwind CSS"],
     url: "https://travelor-pjsm.vercel.app/",
+    category: "react",
+  },
+  {
+    id: "dqq-dashboard",
+    title: {
+      ar: "لوحة تحكم دقّق",
+      en: "Dqq Dashboard",
+    },
+    description: {
+      ar: "لوحة تحكم إدارية لنظام دقّق تعرض الطلبات وبوالص الشحن والتقارير وأداء المستودعات بواجهة تحكم متكاملة",
+      en: "An admin dashboard for the Dqq system covering orders, waybills, reports, and warehouse performance in one control panel",
+    },
+    image: "/projects/dqq-dashboard-1.png",
+    images: [
+      "/projects/dqq-dashboard-1.png",
+      "/projects/dqq-dashboard-2.png",
+      "/projects/dqq-dashboard-3.png",
+      "/projects/dqq-dashboard-4.png",
+    ],
+    technologies: ["React", "Next.js", "Tailwind CSS"],
+    url: "#",
     category: "react",
   },
 ];

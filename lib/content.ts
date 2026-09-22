@@ -62,9 +62,9 @@ export const heroContent = {
     ar: "عرض أعمالي",
     en: "View My Work",
   },
-  ctaContact: {
-    ar: "تواصل معي",
-    en: "Contact Me",
+  ctaCV: {
+    ar: "تحميل السيرة الذاتية",
+    en: "Download CV",
   },
 };
 

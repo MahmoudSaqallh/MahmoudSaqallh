@@ -23,6 +23,7 @@ export interface Project {
   title: LocalizedString;
   description: LocalizedString;
   image: string;
+  images?: string[];
   technologies: string[];
   url: string;
   category: ProjectCategory;
